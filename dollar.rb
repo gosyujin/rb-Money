@@ -1,4 +1,5 @@
 class Dollar
+  attr_accessor :amount
   def initialize(amount)
     @amount = amount
   end
@@ -7,5 +8,7 @@ class Dollar
     return Dollar.new(@amount * multiplier)
   end
 
-  attr_accessor :amount
+  def equals(object)
+    return true
+  end
 end

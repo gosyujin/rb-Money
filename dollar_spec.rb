@@ -13,4 +13,10 @@ describe Dollar do
       product.amount.should == 15
     end
   end
+  
+  context '$を比較するとき' do
+    it '$5と$5は等しい' do
+      Dollar.new(5).equals(Dollar.new(5)).should be_true
+    end
+  end
 end
