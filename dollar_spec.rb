@@ -1,6 +1,7 @@
 #-*- coding:utf-8 -*-
 require 'rubygems'
 require 'rspec'
+require 'dollar'
 
 describe Dollar do
   context '$5*2のとき' do
