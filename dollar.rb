@@ -1,5 +1,5 @@
 class Dollar
-  attr_accessor :amount
+  attr_reader :amount
   def initialize(amount)
     @amount = amount
   end
