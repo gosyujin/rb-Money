@@ -18,5 +18,8 @@ describe Dollar do
     it '$5と$5は等しい' do
       Dollar.new(5).equals(Dollar.new(5)).should be_true
     end
+    it '$5と$6は等しくない' do
+      Dollar.new(5).equals(Dollar.new(6)).should be_false
+    end
   end
 end
